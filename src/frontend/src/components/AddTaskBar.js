@@ -1,28 +1,37 @@
-import { useState } from 'react';
-import { addTask } from '../api';
+import { useState } from "react";
+import { addTask } from "../api";
+import "./AddTaskBar.css";
 
 const AddTaskBar = ({ forceUpdate }) => {
-    const [newTask, setNewTask] = useState('');
+  const [newTask, setNewTask] = useState("");
 
-//     useEffect(() => {
-// 
-//     }, [updateFunc])
+  //     useEffect(() => {
+  //
+  //     }, [updateFunc])
 
-    const addnewTask = () => {
-        if (newTask) {
-            addTask(newTask).then(res => {
-                setNewTask('');
-                forceUpdate();
-            })
-        }
+  const addnewTask = (e) => {
+    e.preventDefault();
+    if (newTask) {
+      addTask(newTask).then((res) => {
+        setNewTask("");
+        forceUpdate();
+      });
     }
+  };
 
-    return(
-        <div>
-            <input type="text" value={newTask} onChange={ (e) => setNewTask(e.target.value) } />
-            <button onClick={addnewTask}>ADD TASK</button>
-        </div>
-    )
-}
+  return (
+    <form className="AddTaskBar">
+      <h1 className="title">simplyTODO</h1>
+      <br />
+
+      <input
+        type="text"
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
+      />
+      <button onClick={addnewTask}>ADD TASK</button>
+    </form>
+  );
+};
 
 export default AddTaskBar;

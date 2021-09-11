@@ -1,24 +1,27 @@
-import SingleTask from './SingleTask';
-import { useState } from 'react';
+import SingleTask from "./SingleTask";
+import { useState } from "react";
 
-
+import "./TaskList.css";
 
 const TaskList = ({ tasks, forceUpdate }) => {
-    const [dummy, setDummy] = useState(true);
+  const [dummy, setDummy] = useState(true);
 
-    const updateList = () => {
-        setDummy(!dummy);
-    }
+  const updateList = () => {
+    setDummy(!dummy);
+  };
 
-    return(
-        <ul>
-          {
-            tasks.map((task) => (
-                <SingleTask key={task._id} task={task} forceUpdate = {forceUpdate} updateList = {updateList} />
-            ))
-          }  
-        </ul>
-    )
-}
+  return (
+    <ul>
+      {tasks.map((task) => (
+        <SingleTask
+          key={task._id}
+          task={task}
+          forceUpdate={forceUpdate}
+          updateList={updateList}
+        />
+      ))}
+    </ul>
+  );
+};
 
 export default TaskList;

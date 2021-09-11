@@ -1,0 +1,42 @@
+.error {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: red;
+  background-color: #7fc6b8;
+  line-height: 200px;
+}
+
+.loading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 200px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #7fc6b8;
+  color: #2a2c24;
+}
+
+.App {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-top: 50px;
+  align-content: center;
+  background-color: #7cc1ac;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}

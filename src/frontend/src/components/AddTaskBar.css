@@ -1,0 +1,47 @@
+.AddTaskBar {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 5px;
+  position: sticky;
+  top: 20px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.AddTaskBar input {
+  outline: none;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: #2a2c24;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+.AddTaskBar button {
+  background-color: #40b3a2;
+  color: #2a2c24;
+  height: 54px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+}
+
+.title {
+  color: white;
+}
